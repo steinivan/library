@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proyectLibrary';
+  initComponent:string='beginning'
+  title = 'BookFlix';
+  
+  
+  itemTaskComponent(stringComponent:string){
+    this.initComponent = stringComponent
+  }
 }
