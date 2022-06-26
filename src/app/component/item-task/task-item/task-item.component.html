@@ -1,0 +1,10 @@
+<div class="h-96 w-48 bg-blue-700 text-white mb-2 object-cover relative" >
+    <img class="h-full" src={{task.src}} alt="">
+    <fa-icon [icon]="faIconCross" class="absolute top-0 left-0 p-1" (click)="onDelete(task)"></fa-icon> 
+    <div class="text red bg-black">
+        <p>book complete : {{task.complete}}</p>
+        <h3>Name: {{task.name}} </h3>
+        <p>ID: {{task.id}}</p>
+        <p>{{task.yearPublished}}</p>
+    </div>
+</div>

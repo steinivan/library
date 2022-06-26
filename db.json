@@ -1,0 +1,39 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "complete": false,
+      "name": "Ojos de fuego",
+      "yearPublished": 1980,
+      "src": "../assets/It.jpg"
+    },
+    {
+      "id": 2,
+      "complete": false,
+      "name": "Ojos de fuego",
+      "yearPublished": 1980,
+      "src": "../assets/El-resplandor-debolsillo.png"
+    },
+    {
+      "id": 3,
+      "complete": false,
+      "name": "Ojos de fuego",
+      "yearPublished": 1980,
+      "src": "../assets/TheStand.jpg"
+    },
+    {
+      "id": 4,
+      "complete": false,
+      "name": "Ojos de fuego",
+      "yearPublished": 1980,
+      "src": "../assets/Cementerio-de-animales.jpg"
+    },
+    {
+      "id": 5,
+      "complete": false,
+      "name": "Ojos de fuego",
+      "yearPublished": 1980,
+      "src": "../assets/Ojos-de-fuego.jpg"
+    }
+  ]
+}
