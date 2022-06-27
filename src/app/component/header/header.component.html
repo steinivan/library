@@ -1,1 +1,15 @@
-<p>header works!</p>
+<header class="absolute pt-3 z-50 top-0 left-0 right-0 w-full text-white flex justify-between">
+    <h2 class="text-2xl sm:text-3xl text-[#e50914] px-5 sm:pl-16 lg:pl-32 font-black"><a href="#">BOOKFLIX</a></h2>
+    <div class="pr-2 gap-3 sm:pr-7 pt-1 flex sm:gap-5 w-auto">
+        <select *ngIf="login===false" class="selectIdiom w-14 h-8 sm:w-32 sm:h-8 border-2 border-white" name="selectIdiom" id="">
+            <option class="text-center" value="ingles"> Ingles </option>
+            <option class="bg-[#aaa]" value="spanish">Español</option>
+        </select>
+        <div *ngIf="login===true" class="flex gap-4 items-center">
+            <fa-icon *ngIf="resize.sizeDisplay==='web'" class="pr-3" [icon]="SearchIcon"></fa-icon>
+            <fa-icon [icon]="BellIcon"></fa-icon>
+        </div>
+        <button *ngIf="login===false" (click)="SignUp()" class="text-xs h-7 btn-red sm:h-8 rounded-sm w-max p-1">Iniciar sesion</button>
+        <button *ngIf="login===true" (click)="SignUp()" class="text-xs h-7 btn-red sm:h-8 rounded-sm w-max p-1">Cerrar sesion</button>
+    </div>
+</header>

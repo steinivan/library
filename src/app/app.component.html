@@ -1,5 +1,6 @@
 
-<app-beginning *ngIf="initComponent==='beginning'"></app-beginning>
-<app-task *ngIf="initComponent==='task'" class="flex"></app-task>
-<button (click)="itemTaskComponent('beginning')" class="absolute top-0 right-0">Beginning</button>
-<button (click)="itemTaskComponent('task')" class="absolute top-20 right-0">TaskBook</button>
+<!-- <app-beginning *ngIf="initComponent==='beginning'"></app-beginning> -->
+<!-- <app-task *ngIf="initComponent==='task'" class="flex"></app-task> -->
+<!-- <button (click)="itemTaskComponent('beginning')" class="absolute top-0 right-0">Beginning</button>
+<button (click)="itemTaskComponent('task')" class="absolute top-20 right-0">TaskBook</button> -->
+<router-outlet></router-outlet>
