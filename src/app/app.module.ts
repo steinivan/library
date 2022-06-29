@@ -9,7 +9,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BeginningComponent } from './component/beginning/beginning.component';
 import { HeaderComponent } from './component/header/header.component';
 import { SignComponent } from './vista1/sign/sign.component';
-
 @NgModule({
   declarations: [
     AppComponent,

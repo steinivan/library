@@ -6,10 +6,10 @@
             <option class="bg-[#aaa]" value="spanish">Español</option>
         </select>
         <div *ngIf="login===true" class="flex gap-4 items-center">
-            <fa-icon *ngIf="resize.sizeDisplay==='web'" class="pr-3" [icon]="SearchIcon"></fa-icon>
-            <fa-icon [icon]="BellIcon"></fa-icon>
+            <fa-icon *ngIf="resize.sizeDisplay==='web' && BtnsActive===false" class="pr-3" [icon]="SearchIcon"></fa-icon>
+            <fa-icon *ngIf="BtnsActive===false" [icon]="BellIcon"></fa-icon>
         </div>
-        <button *ngIf="login===false" (click)="SignUp()" class="text-xs h-7 btn-red sm:h-8 rounded-sm w-max p-1">Iniciar sesion</button>
-        <button *ngIf="login===true" (click)="SignUp()" class="text-xs h-7 btn-red sm:h-8 rounded-sm w-max p-1">Cerrar sesion</button>
+        <button *ngIf="login===false && BtnsActive===false" (click)="SignUp()" class="text-xs h-7 btn-red sm:h-8 rounded-sm w-max p-1">Iniciar sesion</button>
+        <button *ngIf="login===true && BtnsActive===false" (click)="SignUp()" class="text-xs h-7 btn-red sm:h-8 rounded-sm w-max p-1">Cerrar sesion</button>
     </div>
 </header>
