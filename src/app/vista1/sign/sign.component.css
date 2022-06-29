@@ -1,0 +1,30 @@
+.bgBookFlix{
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../../assets/bgBook.jpg); */
+    background-position:bottom right;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bgBookFlix::before{
+    content: ""; position: absolute; width: 200%; height: 200%; top: -50%; left: -50%; z-index: -1; background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../../../assets/bgBook.jpg) 0 0 repeat; -webkit-transform: rotate(15deg); -moz-transform: rotate(15deg); -ms-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg);
+}
+.btn-red {
+    color: #fff;
+    background-color: #e50914;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#e50914),to(#db0510));
+    background-image: -webkit-linear-gradient(top,#e50914,#db0510);
+    background-image: -moz- oldlinear-gradient(top,#e50914,#db0510);
+    background-image: -o-linear-gradient(top,#e50914,#db0510);
+    background-image: linear-gradient(to bottom,#e50914,#db0510);
+    -webkit-box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+    -moz-box-shadow: 0 1px 0 rgba(0,0,0,.45);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}

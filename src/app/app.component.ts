@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-
+// import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  initComponent:string='beginning'
+  // initComponent:string='beginning'
   title = 'BookFlix';
   
   
-  itemTaskComponent(stringComponent:string){
-    this.initComponent = stringComponent
-  }
+  // itemTaskComponent(stringComponent:string){
+  //   this.initComponent = stringComponent
+  // }
 }
